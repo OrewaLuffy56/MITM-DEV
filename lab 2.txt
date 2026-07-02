@@ -6,3 +6,46 @@ git branch ls
 git branch
 git branch -a
 git rebase master
+
+
+
+# Clone repository
+git clone https://github.com/LikithKumar0112/Mod1P1-Demo.git
+
+# Attempt to rename branch (outside repo, shows error)
+git branch -m master
+
+# Navigate to local repository
+cd MITdemo
+
+# Rename current branch
+git branch -m master
+
+# Verify local branches
+git branch
+
+# View local and remote branches
+git branch -a
+
+# Perform rebase
+git rebase master
+
+# Fork concept (GitHub UI)
+# Steps: Click Fork → GitHub creates copy → Clone forked repo
+git clone <forked-repository-url>
+
+# Merge concept
+git checkout -b feature
+git add .
+git commit -m "Feature Added"
+git checkout master
+git merge feature
+
+# Conflict resolution
+# After conflict markers appear in file:
+git add index.html
+git commit -m "Resolved Merge Conflict"
+
+# Rebase concept
+git checkout feature
+git rebase master
